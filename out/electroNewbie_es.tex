@@ -3,6 +3,101 @@ documento?}\label{quuxe9-vamos-a-hacer-quuxe9-se-describe-en-este-documento}
 
 Apuntes de electrónica por supuesto.
 
+\section{LEDS}\label{leds}
+
+\begin{quote}
+Wikipedia ``Un led (del acrónimo inglés LED, light-emitting diode:
+`diodo emisor de luz'; el plural aceptado por la RAE es ledes ) es un
+componente optoelectrónico pasivo y, más concretamente, un diodo que
+emite luz.''
+\end{quote}
+
+\subsection{Calculo de resistencias para
+leds}\label{calculo-de-resistencias-para-leds}
+
+\textbf{NO ESTÁ TERMINADO}
+
+Un led y en general cualquier diodo es una unión de dos elementos
+semiconductores. Este tipo de uniones tienen una caída de voltaje de
+valor fijo (al menos en el rango de funcionamiento normal).
+
+\begin{longtable}[c]{@{}lc@{}}
+\caption{Caída de tensión típica en leds}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.31\columnwidth}\raggedright\strut
+Color del led
+\strut\end{minipage} &
+\begin{minipage}[b]{0.12\columnwidth}\centering\strut
+Tensión umbral
+\strut\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.31\columnwidth}\raggedright\strut
+Color del led
+\strut\end{minipage} &
+\begin{minipage}[b]{0.12\columnwidth}\centering\strut
+Tensión umbral
+\strut\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Rojo
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+1,6 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Rojo alta luminosidad
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+1,9 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Amarillo
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+1,7 2 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Verde
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+2,4 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Naranja
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+2,4 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Blanco Brillante
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+3,4 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Azul
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+3,4 V
+\strut\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.31\columnwidth}\raggedright\strut
+Azul 430nm
+\strut\end{minipage} &
+\begin{minipage}[t]{0.12\columnwidth}\centering\strut
+4,6 V
+\strut\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+La corriente que necesita el led también depende del tipo de led, pero
+en general están entre 10mA y 30mA. Con corrientes bajas obtendremos
+poco brillo y el led durará mucho. Con corrientes altas obtendremos más
+brillo y una vida útil más corta. Un valor de 20mA es un buen compromiso
+entre ambos extremos.
+
 \section{META}\label{meta}
 
 De momento nos proponemos usar pandoc para generar los documentos, en

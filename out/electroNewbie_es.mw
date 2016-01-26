@@ -2,6 +2,48 @@
 
 Apuntes de electrónica por supuesto.
 
+= LEDS =
+
+<blockquote>Wikipedia &quot;Un led (del acrónimo inglés LED, light-emitting diode: ‘diodo emisor de luz’; el plural aceptado por la RAE es ledes ) es un componente optoelectrónico pasivo y, más concretamente, un diodo que emite luz.&quot;
+</blockquote>
+== Calculo de resistencias para leds ==
+
+'''NO ESTÁ TERMINADO'''
+
+Un led y en general cualquier diodo es una unión de dos elementos semiconductores. Este tipo de uniones tienen una caída de voltaje de valor fijo (al menos en el rango de funcionamiento normal).
+
+{|
+|+ Caída de tensión típica en leds
+!width="33%"|Color del led
+!align="center" width="12%"|Tensión umbral
+|-
+|Rojo
+|align="center"|1,6 V
+|-
+|Rojo alta luminosidad
+|align="center"|1,9 V
+|-
+|Amarillo
+|align="center"|1,7 2 V
+|-
+|Verde
+|align="center"|2,4 V
+|-
+|Naranja
+|align="center"|2,4 V
+|-
+|Blanco Brillante
+|align="center"|3,4 V
+|-
+|Azul
+|align="center"|3,4 V
+|-
+|Azul 430nm
+|align="center"|4,6 V
+|}
+
+La corriente que necesita el led también depende del tipo de led, pero en general están entre 10mA y 30mA. Con corrientes bajas obtendremos poco brillo y el led durará mucho. Con corrientes altas obtendremos más brillo y una vida útil más corta. Un valor de 20mA es un buen compromiso entre ambos extremos.
+
 = META =
 
 De momento nos proponemos usar pandoc para generar los documentos, en esta sección describiremos detalladamente como se generan los distintos documentos de salida usando pandoc.
